@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sky Pazhamudhir Nilayam – Coimbatore</title>
+<meta name="description" content="Coimbatore's freshest fruits, handcrafted juices & delicious snacks — straight from nature to you. Visit Sky Pazhamudhir Nilayam today!"/>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><span>Sky</span> Pazhamudhir</a>
+  <ul>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="hero-bg-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge">🌿 100% Fresh & Natural</div>
+    <h1><span class="sw">Sky</span><br><span class="fw">Pazhamudhir</span><br>Nilayam</h1>
+    <p class="hero-sub">Coimbatore's freshest fruits, handcrafted juices & delicious snacks — straight from nature to you.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-primary">🧃 Explore Menu</a>
+      <button class="btn-play" onclick="openGame()">🎮 Play Fruit Slash</button>
+      <a href="#contact" class="btn-outline">📍 Find Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>🥭 Fresh Mangoes</span><span>•</span><span>🧃 Cold Press Juices</span><span>•</span>
+    <span>🍓 Seasonal Berries</span><span>•</span><span>🍍 Tropical Fruits</span><span>•</span>
+    <span>🥤 Fruit Shakes</span><span>•</span><span>🍎 Daily Fresh Stock</span><span>•</span>
+    <span>🍋 Lemon Cooler</span><span>•</span><span>🍇 Fresh Grapes</span><span>•</span>
+    <span>🥭 Fresh Mangoes</span><span>•</span><span>🧃 Cold Press Juices</span><span>•</span>
+    <span>🍓 Seasonal Berries</span><span>•</span><span>🍍 Tropical Fruits</span><span>•</span>
+    <span>🥤 Fruit Shakes</span><span>•</span><span>🍎 Daily Fresh Stock</span><span>•</span>
+    <span>🍋 Lemon Cooler</span><span>•</span><span>🍇 Fresh Grapes</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+  <div class="feature-item"><div class="feature-icon">🌅</div><h3>Fresh Every Morning</h3><p>Stocked daily at sunrise for peak freshness</p></div>
+  <div class="feature-item"><div class="feature-icon">🚫🧪</div><h3>No Preservatives</h3><p>Pure, natural, chemical-free fruits & juices</p></div>
+  <div class="feature-item"><div class="feature-icon">💰</div><h3>Best Prices</h3><p>Affordable rates for every customer</p></div>
+  <div class="feature-item"><div class="feature-icon">🌿</div><h3>Farm Sourced</h3><p>Direct from local Tamil Nadu farms</p></div>
+</div>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="menu-header">
+    <span class="section-label">Our Menu</span>
+    <h2 class="section-title">Fresh From the Farm 🌿</h2>
+    <p class="section-desc" style="margin:0 auto">Choose from our wide range of juices, fruits, and tasty snacks.</p>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="filterMenu('all',this)">All</button>
+    <button class="tab-btn" onclick="filterMenu('juice',this)">🧃 Juices</button>
+    <button class="tab-btn" onclick="filterMenu('fruit',this)">🍎 Fruits</button>
+    <button class="tab-btn" onclick="filterMenu('snack',this)">🍿 Snacks</button>
+  </div>
+  <div class="menu-grid">
+    <!-- JUICES -->
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-mango">🥭</div><div class="menu-card-body"><h3>Mango Madness Juice</h3><p>Rich Alphonso mango blended fresh with a hint of ginger.</p><div class="menu-card-footer"><span class="price">₹60</span><button class="add-btn" onclick="orderItem('Mango Madness Juice', '₹60')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-pink">🍉</div><div class="menu-card-body"><h3>Watermelon Cooler</h3><p>Chilled watermelon juice with fresh mint leaves & rock salt.</p><div class="menu-card-footer"><span class="price">₹45</span><button class="add-btn" onclick="orderItem('Watermelon Cooler', '₹45')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-orange">🍊</div><div class="menu-card-body"><h3>Orange Sunrise</h3><p>Freshly squeezed Nagpur oranges, pure, pulpy, and cold-pressed.</p><div class="menu-card-footer"><span class="price">₹50</span><button class="add-btn" onclick="orderItem('Orange Sunrise Juice', '₹50')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-pink">🍎</div><div class="menu-card-body"><h3>Pomegranate Pure Juice</h3><p>100% fresh ruby pomegranates, rich in antioxidants.</p><div class="menu-card-footer"><span class="price">₹75</span><button class="add-btn" onclick="orderItem('Pomegranate Pure Juice', '₹75')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-pink">🍎</div><div class="menu-card-body"><h3>Apple Nectar</h3><p>Crisp Himalayan apples juiced fresh with a touch of honey.</p><div class="menu-card-footer"><span class="price">₹65</span><button class="add-btn" onclick="orderItem('Apple Nectar Juice', '₹65')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-green">🍍</div><div class="menu-card-body"><h3>Pineapple Punch</h3><p>Tangy pineapple juice with black salt & a fresh lemon twist.</p><div class="menu-card-footer"><span class="price">₹55</span><button class="add-btn" onclick="orderItem('Pineapple Punch Juice', '₹55')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-green">🍇</div><div class="menu-card-body"><h3>Green Grape Elixir</h3><p>Sweet seedless green grapes blended cold and smooth.</p><div class="menu-card-footer"><span class="price">₹50</span><button class="add-btn" onclick="orderItem('Green Grape Elixir', '₹50')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-purple">🍇</div><div class="menu-card-body"><h3>Black Grape Bliss</h3><p>Rich, sweet seedless black grapes, refreshing and cool.</p><div class="menu-card-footer"><span class="price">₹50</span><button class="add-btn" onclick="orderItem('Black Grape Bliss Juice', '₹50')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-mango">🍌</div><div class="menu-card-body"><h3>Yelakki Banana Shake</h3><p>Creamy banana milkshake with cardamoms & dry fruit toppings.</p><div class="menu-card-footer"><span class="price">₹45</span><button class="add-btn" onclick="orderItem('Yelakki Banana Shake', '₹45')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-orange">🍈</div><div class="menu-card-body"><h3>Papaya Smoothie</h3><p>Healthy, thick papaya blend with honey and chilled milk.</p><div class="menu-card-footer"><span class="price">₹50</span><button class="add-btn" onclick="orderItem('Papaya Smoothie', '₹50')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-mango">🍈</div><div class="menu-card-body"><h3>Muskmelon Shake</h3><p>Chilled fragrant muskmelon juice with dry fruit toppings.</p><div class="menu-card-footer"><span class="price">₹55</span><button class="add-btn" onclick="orderItem('Muskmelon Shake', '₹55')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-green">🥑</div><div class="menu-card-body"><h3>Guava Special Juice</h3><p>Sweet pink guava juice with a pinch of red chilli & salt.</p><div class="menu-card-footer"><span class="price">₹55</span><button class="add-btn" onclick="orderItem('Guava Special Juice', '₹55')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-green">🟢</div><div class="menu-card-body"><h3>Amla Detox Juice</h3><p>Nutritious gooseberry juice with pure honey and fresh ginger.</p><div class="menu-card-footer"><span class="price">₹40</span><button class="add-btn" onclick="orderItem('Amla Detox Juice', '₹40')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="juice"><div class="menu-card-img bg-purple">🟤</div><div class="menu-card-body"><h3>Fig & Honey Shake</h3><p>Rich, creamy fig shake blended with pure natural honey.</p><div class="menu-card-footer"><span class="price">₹70</span><button class="add-btn" onclick="orderItem('Fig & Honey Shake', '₹70')">+ Order</button></div></div></div>
+
+    <!-- FRUITS -->
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-mango">🥭</div><div class="menu-card-body"><h3>Alphonso Mangoes</h3><p>Sweet and fleshy seasonal mangoes sourced from local farms.</p><div class="menu-card-footer"><span class="price">₹120/kg</span><button class="add-btn" onclick="orderItem('Alphonso Mangoes', '₹120/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-orange">🍊</div><div class="menu-card-body"><h3>Nagpur Oranges</h3><p>Premium, juicy Nagpur oranges, packed with Vitamin C.</p><div class="menu-card-footer"><span class="price">₹90/kg</span><button class="add-btn" onclick="orderItem('Nagpur Oranges', '₹90/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-pink">🍎</div><div class="menu-card-body"><h3>Kabul Pomegranates</h3><p>Premium quality ruby red pomegranate seeds, sweet and soft.</p><div class="menu-card-footer"><span class="price">₹160/kg</span><button class="add-btn" onclick="orderItem('Kabul Pomegranates', '₹160/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-pink">🍎</div><div class="menu-card-body"><h3>Royal Gala Apples</h3><p>Crisp, sweet, and imported fresh red apples.</p><div class="menu-card-footer"><span class="price">₹180/kg</span><button class="add-btn" onclick="orderItem('Royal Gala Apples', '₹180/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-green">🍍</div><div class="menu-card-body"><h3>Sweet Pineapples</h3><p>Freshly cut, sweet, and golden tropical pineapples.</p><div class="menu-card-footer"><span class="price">₹60/pc</span><button class="add-btn" onclick="orderItem('Sweet Pineapples', '₹60/pc')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-green">🍇</div><div class="menu-card-body"><h3>Seedless Green Grapes</h3><p>Crunchy and sweet green grapes direct from Nashik vineyards.</p><div class="menu-card-footer"><span class="price">₹100/kg</span><button class="add-btn" onclick="orderItem('Seedless Green Grapes', '₹100/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-purple">🍇</div><div class="menu-card-body"><h3>Seedless Black Grapes</h3><p>Rich, sweet, and premium seedless black grapes.</p><div class="menu-card-footer"><span class="price">₹110/kg</span><button class="add-btn" onclick="orderItem('Seedless Black Grapes', '₹110/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-mango">🍌</div><div class="menu-card-body"><h3>Yelakki Bananas</h3><p>Sweet, aromatic Yelakki bananas from local farms.</p><div class="menu-card-footer"><span class="price">₹60/doz</span><button class="add-btn" onclick="orderItem('Yelakki Bananas', '₹60/doz')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-orange">🍈</div><div class="menu-card-body"><h3>Honey Papayas</h3><p>Fully ripe, sweet, and farm-fresh papayas.</p><div class="menu-card-footer"><span class="price">₹40/kg</span><button class="add-btn" onclick="orderItem('Honey Papayas', '₹40/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-mango">🍈</div><div class="menu-card-body"><h3>Sweet Muskmelons</h3><p>Fragrant and sweet muskmelons, freshly harvested daily.</p><div class="menu-card-footer"><span class="price">₹50/kg</span><button class="add-btn" onclick="orderItem('Sweet Muskmelons', '₹50/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-pink">🍉</div><div class="menu-card-body"><h3>Kiran Watermelons</h3><p>Crisp and juicy watermelons, perfect for hydration.</p><div class="menu-card-footer"><span class="price">₹30/kg</span><button class="add-btn" onclick="orderItem('Kiran Watermelons', '₹30/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-green">🥑</div><div class="menu-card-body"><h3>Pink Guavas</h3><p>Freshly picked pink guavas, sweet, soft, and aromatic.</p><div class="menu-card-footer"><span class="price">₹80/kg</span><button class="add-btn" onclick="orderItem('Pink Guavas', '₹80/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-green">🟢</div><div class="menu-card-body"><h3>Mountain Amlas</h3><p>Vitamin-C rich organic gooseberries (amla) from local hills.</p><div class="menu-card-footer"><span class="price">₹70/kg</span><button class="add-btn" onclick="orderItem('Mountain Amlas', '₹70/kg')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="fruit"><div class="menu-card-img bg-purple">🟤</div><div class="menu-card-body"><h3>Fresh Figs</h3><p>Soft, sweet, and highly nutritious fresh figs.</p><div class="menu-card-footer"><span class="price">₹140/kg</span><button class="add-btn" onclick="orderItem('Fresh Figs', '₹140/kg')">+ Order</button></div></div></div>
+
+    <!-- DRINKS & SNACKS -->
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-pink">🥤</div><div class="menu-card-body"><h3>Chilled Rose Milk</h3><p>Classic sweet rose milk topped with healthy basil seeds.</p><div class="menu-card-footer"><span class="price">₹35</span><button class="add-btn" onclick="orderItem('Chilled Rose Milk', '₹35')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-orange">🥤</div><div class="menu-card-body"><h3>Nannari Sarsaparilla</h3><p>Traditional herbal syrup cooler with fresh lemon juice.</p><div class="menu-card-footer"><span class="price">₹30</span><button class="add-btn" onclick="orderItem('Nannari Sarsaparilla', '₹30')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-sky">🥤</div><div class="menu-card-body"><h3>Creamy Cold Coffee</h3><p>Chilled, thick, and delicious whipped coffee shake.</p><div class="menu-card-footer"><span class="price">₹50</span><button class="add-btn" onclick="orderItem('Creamy Cold Coffee', '₹50')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-orange">🥗</div><div class="menu-card-body"><h3>Fruit Chaat Bowl</h3><p>Mixed fresh seasonal fruits tossed in chaat masala & lemon.</p><div class="menu-card-footer"><span class="price">₹70</span><button class="add-btn" onclick="orderItem('Fruit Chaat Bowl', '₹70')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-green">🍿</div><div class="menu-card-body"><h3>Banana Chips</h3><p>Crispy Kerala-style banana chips, lightly salted.</p><div class="menu-card-footer"><span class="price">₹35</span><button class="add-btn" onclick="orderItem('Banana Chips', '₹35')">+ Order</button></div></div></div>
+    <div class="menu-card menu-item active" data-cat="snack"><div class="menu-card-img bg-orange">🍿</div><div class="menu-card-body"><h3>Spicy Tapioca Chips</h3><p>Thin-sliced, crispy tapioca wafers with chilli seasoning.</p><div class="menu-card-footer"><span class="price">₹40</span><button class="add-btn" onclick="orderItem('Spicy Tapioca Chips', '₹40')">+ Order</button></div></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual">
+    <div class="about-tile">🥭</div><div class="about-tile">🍓</div>
+    <div class="about-tile">🧃</div><div class="about-tile">🍍</div>
+  </div>
+  <div class="about-text">
+    <span class="section-label">Our Story</span>
+    <h2 class="section-title">Freshness is Our Family Value</h2>
+    <p class="section-desc">Sky Pazhamudhir Nilayam was born out of a simple belief — everyone deserves the best, freshest fruits at honest prices. We source directly from Tamil Nadu's finest farms and bring the harvest straight to your hands, every single day.</p>
+    <div class="stats-row">
+      <div class="stat"><span class="stat-num">25+</span><span class="stat-lbl">Years of Fresh</span></div>
+      <div class="stat"><span class="stat-num">50+</span><span class="stat-lbl">Fruit Varieties</span></div>
+      <div class="stat"><span class="stat-num">500+</span><span class="stat-lbl">Happy Customers/Day</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALS -->
+<section id="specials">
+  <span class="section-label">Today's Highlights</span>
+  <h2 class="section-title">Daily Specials 🌟</h2>
+  <div class="specials-grid">
+    <div class="special-card"><div class="special-tag">Hot Deal</div><span class="big-emoji">🥭</span><h3>Mango Season Special</h3><p>Buy 2 kg of any mango variety and get 500g free! Available every morning till stocks last.</p></div>
+    <div class="special-card"><div class="special-tag">Combo</div><span class="big-emoji">🧃</span><h3>Juice + Fruit Combo</h3><p>Any fresh juice + seasonal fruit of your choice at just ₹99. Perfect for a refreshing break!</p></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <span class="section-label">Customer Love</span>
+  <h2 class="section-title">What People Say 💬</h2>
+  <div class="reviews-grid">
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Best fruit shop in Coimbatore! The mangoes are incredibly fresh and the juice is absolutely delicious. We visit every week!"</p><div class="reviewer"><div class="reviewer-avatar av1">👩</div><div><div class="reviewer-name">Kavitha R.</div><div class="reviewer-loc">RS Puram, Coimbatore</div></div></div></div>
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Amazing quality at such affordable prices. The fruit chaat bowl is my go-to evening snack. Highly recommended!"</p><div class="reviewer"><div class="reviewer-avatar av2">👨</div><div><div class="reviewer-name">Senthil K.</div><div class="reviewer-loc">TVS Nagar, Coimbatore</div></div></div></div>
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Sky Pazhamudhir Nilayam never disappoints. Fresh stock every day, friendly service and great variety. My family loves it!"</p><div class="reviewer"><div class="reviewer-avatar av3">👩</div><div><div class="reviewer-name">Priya M.</div><div class="reviewer-loc">Saibaba Colony, Coimbatore</div></div></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="section-label">Get In Touch</span>
+  <h2 class="section-title">Visit Us Today! 🗺️</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><div class="contact-icon">📍</div><h3>Location</h3><p>Thadagam Main Rd, TVS Nagar,<br>Opp to IOB Bank,<br>Coimbatore, TN 641025</p></div>
+    <div class="contact-card"><div class="contact-icon">🕗</div><h3>Open Hours</h3><p>All Days Open<br>8:00 AM – 10:00 PM</p></div>
+    <div class="contact-card"><div class="contact-icon">📞</div><h3>Call Us</h3><a href="tel:+919894325988">+91 98943 25988</a><br><a href="tel:+918870682988" style="margin-top:4px;display:inline-block">+91 88706 82988</a></div>
+    <div class="contact-card"><div class="contact-icon">💬</div><h3>WhatsApp Order</h3><a href="https://wa.me/919894325988">+91 98943 25988</a><br><a href="https://wa.me/918870682988" style="margin-top:4px;display:inline-block">+91 88706 82988</a></div>
+  </div>
+  <div style="margin-top:40px;border-radius:20px;overflow:hidden;max-width:800px;margin-left:auto;margin-right:auto;box-shadow:0 8px 30px rgba(0,0,0,.3)">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0!2d76.9215739!3d11.0427535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859c28e3e7561%3A0x3124c49cd088be1c!2sSKY%20PAZHAMUDHIR%20NILAYAM!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer><p>© 2025 <span>Sky Pazhamudhir Nilayam</span> — Coimbatore's Freshest Fruit Shop 🍓 Made with ❤️</p></footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919894325988" class="wa-btn" target="_blank" title="Order on WhatsApp">💬</a>
+
+<!-- GAME OVERLAY -->
+<div id="GO">
+  <div id="GH">
+    <div class="hs">🏆 <span id="GSCORE">0</span> <span style="font-size:.85rem;color:#aaa;font-family:Nunito">/ 1000</span></div>
+    <div class="hl" id="GLIVES">❤️❤️❤️</div>
+    <button class="hc" onclick="closeGame()">✕ Close</button>
+  </div>
+  <div id="GPBAR"><div id="GPFILL"></div></div>
+  <canvas id="GC"></canvas>
+
+  <!-- START SCREEN -->
+  <div class="gscreen" id="GSS">
+    <div class="gfr">🥭 🍓 🍊 🍇 🍍</div>
+    <div class="gtitle">Fruit Slash!</div>
+    <p class="gsub">Slice the colourful fruits flying across the screen!<br>Score <strong style="color:#FFD700">1000 points</strong> to win a <strong style="color:#7AC74F">FREE JUICE</strong> 🧃 at our store!</p>
+    <p class="grule">💣 Slice a bomb = instant Game Over!</p>
+    <button class="gbtn" onclick="startGame()">🔪 Start Slicing!</button>
+  </div>
+
+  <!-- GAME OVER SCREEN -->
+  <div class="gscreen off" id="GOS">
+    <div class="gfr" id="GOEMOJI">💥 😢 💥</div>
+    <div class="gtitle" id="GOTITLE">Game Over!</div>
+    <p class="gsub">Your Final Score</p>
+    <div class="gscore" id="GOSCORE">0</div>
+    <div id="FJMSG">🧃 YOU WON A FREE JUICE!<br><small style="font-size:.85rem">Show this screen at Sky Pazhamudhir Nilayam!</small></div>
+    <p class="gsub" id="GOMSG" style="margin-top:10px"></p>
+    <button class="gbtn" style="margin-top:20px" onclick="startGame()">🔄 Play Again</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
